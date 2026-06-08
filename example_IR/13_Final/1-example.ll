@@ -1,0 +1,276 @@
+; ModuleID = '1-example'
+source_filename = "1-example"
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+%TypeInfo = type { i8*, i8, i8, i16, i32, %BitMap*, i32, i8, i8, i16, i32*, i8*, i8*, i8*, %TypeInfo*, %ExtensionDef**, i8*, i8* }
+%BitMap = type { i32, [0 x i8] }
+%ExtensionDef = type { i32, i8, i8, i16, i8*, i8*, i8*, i8* }
+%"record.std.core:String" = type { i8 addrspace(1)*, i32, i32 }
+%TypeTemplate = type { i8*, i8, i8, i16, i16, i8*, i8*, i8*, i8*, %ExtensionDef**, i16 }
+%"record.std.core:Range<Int64>" = type { i64, i64, i64, i1, i1, i1 }
+%"Tuple<Int64,Int64,Int64>" = type { i64, i64, i64 }
+%ArrayLayout.UInt8 = type { %ArrayBase, [0 x i8] }
+%ArrayBase = type { i64 }
+%Int64.Type = type { i64 }
+%"ObjLayout.Closure<()->ccbase_r0>" = type { i8*, i8* }
+%"ObjLayout.std.core:ArithmeticException" = type { %"record.std.core:String", i8 addrspace(1)*, %"record.std.core:Array<T>", i8 addrspace(1)* }
+%"record.std.core:Array<T>" = type { i8 addrspace(1)*, i64, i64 }
+%enum.OptionLike.Ref = type { i8 addrspace(1)*, [0 x i8] }
+
+@Int64.ti = external global %TypeInfo, !RelatedType !0 #0
+@"$const_cjstring.c-J6RJj+YQj" = private constant %"record.std.core:String" { i8 addrspace(1)* addrspacecast (i8* bitcast ({ i8*, i64, [16 x i8] }* @"$const_cjstring_data.c-J6RJj+YQj" to i8*) to i8 addrspace(1)*), i32 0, i32 16 } #1
+@"RawArray<UInt8>.ti" = internal global %TypeInfo { i8* getelementptr inbounds ([16 x i8], [16 x i8]* @"RawArray<UInt8>.name", i32 0, i32 0), i8 -126, i8 0, i16 0, i32 0, %BitMap* null, i32 0, i8 0, i8 0, i16 -32768, i32* null, i8* bitcast (%TypeTemplate* @RawArray.tt to i8*), i8* null, i8* null, %TypeInfo* @UInt8.ti, %ExtensionDef** null, i8* null, i8* null }, !RelatedType !1 #2
+@UInt8.ti = external global %TypeInfo, !RelatedType !2 #0
+@"RawArray<UInt8>.name" = private unnamed_addr constant [16 x i8] c"RawArray<UInt8>\00", align 1 #3
+@RawArray.tt = external global %TypeTemplate
+@"$const_cjstring_data.c-J6RJj+YQj" = private constant { i8*, i64, [16 x i8] } { i8* bitcast (%TypeInfo* @"RawArray<UInt8>.ti" to i8*), i64 16, [16 x i8] c"Divided by zero!" } #4
+@llvm.used = appending global [1 x i8*] [i8* bitcast (void ()* @"0_for_keeping_some_types" to i8*)], section "llvm.metadata"
+
+define i64 @_CNat5RangeIlE4lastHv(%"record.std.core:Range<Int64>"* noalias nocapture readonly %this, %TypeInfo* %outerTI) gc "cangjie" personality i32 (...)* @"__cj_personality_v0$" !dbg !10 {
+allocas:
+  %0 = alloca i64, align 8
+  %1 = alloca i1, align 1
+  %2 = alloca %"Tuple<Int64,Int64,Int64>", align 8
+  %3 = alloca %"Tuple<Int64,Int64,Int64>", align 8
+  %4 = alloca %"Tuple<Int64,Int64,Int64>", align 8
+  %5 = alloca i64, align 8
+  %6 = alloca %"Tuple<Int64,Int64,Int64>", align 8
+  br label %bb0
+
+bb0:                                              ; preds = %allocas
+  %7 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !15
+  %8 = load i64, i64* %7, align 8, !dbg !15
+  %icmpne = icmp ne i64 %8, 1, !dbg !15
+  br i1 %icmpne, label %bb2, label %bb3, !dbg !15
+
+bb2:                                              ; preds = %bb0
+  %9 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !16
+  %10 = load i64, i64* %9, align 8, !dbg !16
+  %icmpne1 = icmp ne i64 %10, -1, !dbg !16
+  store i1 %icmpne1, i1* %1, align 1, !dbg !16
+  br label %bb4, !dbg !15
+
+bb4:                                              ; preds = %bb3, %bb2
+  %11 = load i1, i1* %1, align 1, !dbg !15
+  br i1 %11, label %bb6, label %bb5, !dbg !17
+
+bb6:                                              ; preds = %bb4
+  %12 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !18
+  %13 = load i64, i64* %12, align 8, !dbg !18
+  %icmpsgt = icmp sgt i64 %13, 0, !dbg !18
+  br i1 %icmpsgt, label %bb8, label %bb9, !dbg !19
+
+bb8:                                              ; preds = %bb6
+  %14 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 0, !dbg !20
+  %15 = load i64, i64* %14, align 8, !dbg !20
+  %16 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 1, !dbg !21
+  %17 = load i64, i64* %16, align 8, !dbg !21
+  %18 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !22
+  %19 = load i64, i64* %18, align 8, !dbg !22
+  %20 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %3, i32 0, i32 0, !dbg !23
+  store i64 %15, i64* %20, align 8, !dbg !23
+  %21 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %3, i32 0, i32 1, !dbg !23
+  store i64 %17, i64* %21, align 8, !dbg !23
+  %22 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %3, i32 0, i32 2, !dbg !23
+  store i64 %19, i64* %22, align 8, !dbg !23
+  %23 = bitcast %"Tuple<Int64,Int64,Int64>"* %2 to i8*, !dbg !19
+  %24 = bitcast %"Tuple<Int64,Int64,Int64>"* %3 to i8*, !dbg !19
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %23, i8* align 8 %24, i64 24, i1 false), !dbg !19
+  br label %bb7, !dbg !24
+
+bb7:                                              ; preds = %bb9, %bb8
+  %25 = bitcast %"Tuple<Int64,Int64,Int64>"* %4 to i8*, !dbg !19
+  %26 = bitcast %"Tuple<Int64,Int64,Int64>"* %2 to i8*, !dbg !19
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %25, i8* align 8 %26, i64 24, i1 false), !dbg !19
+  %27 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %4, i32 0, i32 0, !dbg !24
+  %lower = load i64, i64* %27, align 8, !dbg !24
+  %28 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %4, i32 0, i32 1, !dbg !24
+  %upper = load i64, i64* %28, align 8, !dbg !24
+  %29 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %4, i32 0, i32 2, !dbg !24
+  %absStep = load i64, i64* %29, align 8, !dbg !24
+  %30 = call i64 @_CNatXl8positionHv(i64 %upper, %TypeInfo* @Int64.ti), !dbg !25
+  %31 = call i64 @_CNatXl8positionHv(i64 %lower, %TypeInfo* @Int64.ti), !dbg !26
+  %gap = sub i64 %30, %31, !dbg !25
+  %32 = icmp eq i64 %absStep, 0, !dbg !27
+  br i1 %32, label %divisorIs0, label %divisorIsNot0, !dbg !27
+
+divisorIs0:                                       ; preds = %bb7
+  %33 = call i8 addrspace(1)* @"rt$CreateArithmeticException_msg"(%"record.std.core:String"* @"$const_cjstring.c-J6RJj+YQj"), !dbg !27
+  call void @llvm.cj.throw.exception(i8 addrspace(1)* %33), !dbg !27
+  unreachable, !dbg !27
+
+divisorIsNot0:                                    ; preds = %bb7
+  %rem = urem i64 %gap, %absStep, !dbg !27
+  %icmpne2 = icmp ne i64 %rem, 0, !dbg !28
+  br i1 %icmpne2, label %bb11, label %bb5, !dbg !29
+
+bb11:                                             ; preds = %divisorIsNot0
+  %34 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !30
+  %35 = load i64, i64* %34, align 8, !dbg !30
+  %icmpsgt3 = icmp sgt i64 %35, 0, !dbg !30
+  br i1 %icmpsgt3, label %bb13, label %bb15, !dbg !31
+
+bb13:                                             ; preds = %bb11
+  %36 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 1, !dbg !32
+  %37 = load i64, i64* %36, align 8, !dbg !32
+  %Neg = sub i64 0, %rem, !dbg !33
+  %38 = call i64 @_CNatXl4nextHl(i64 %37, i64 %Neg, %TypeInfo* @Int64.ti), !dbg !32
+  store i64 %38, i64* %0, align 8
+  %39 = load i64, i64* %0, align 8, !dbg !34
+  ret i64 %39, !dbg !34
+
+bb15:                                             ; preds = %bb11
+  %40 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 1, !dbg !35
+  %41 = load i64, i64* %40, align 8, !dbg !35
+  %42 = call i64 @_CNatXl4nextHl(i64 %41, i64 %rem, %TypeInfo* @Int64.ti), !dbg !35
+  store i64 %42, i64* %0, align 8
+  %43 = load i64, i64* %0, align 8, !dbg !36
+  ret i64 %43, !dbg !36
+
+bb5:                                              ; preds = %divisorIsNot0, %bb4
+  %44 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 5, !dbg !37
+  %45 = load i1, i1* %44, align 1, !dbg !37
+  br i1 %45, label %bb18, label %bb19, !dbg !38
+
+bb18:                                             ; preds = %bb5
+  %46 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 1, !dbg !39
+  %47 = load i64, i64* %46, align 8, !dbg !39
+  store i64 %47, i64* %5, align 8, !dbg !38
+  br label %bb17, !dbg !24
+
+bb17:                                             ; preds = %bb19, %bb18
+  %48 = load i64, i64* %5, align 8, !dbg !38
+  store i64 %48, i64* %0, align 8
+  %49 = load i64, i64* %0, align 8, !dbg !38
+  ret i64 %49, !dbg !38
+
+bb19:                                             ; preds = %bb5
+  %50 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 1, !dbg !40
+  %51 = load i64, i64* %50, align 8, !dbg !40
+  %52 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !41
+  %53 = load i64, i64* %52, align 8, !dbg !41
+  %Neg4 = sub i64 0, %53, !dbg !42
+  %54 = call i64 @_CNatXl4nextHl(i64 %51, i64 %Neg4, %TypeInfo* @Int64.ti), !dbg !40
+  store i64 %54, i64* %5, align 8, !dbg !38
+  br label %bb17, !dbg !24
+
+bb9:                                              ; preds = %bb6
+  %55 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 1, !dbg !43
+  %56 = load i64, i64* %55, align 8, !dbg !43
+  %57 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 0, !dbg !44
+  %58 = load i64, i64* %57, align 8, !dbg !44
+  %59 = getelementptr inbounds %"record.std.core:Range<Int64>", %"record.std.core:Range<Int64>"* %this, i32 0, i32 2, !dbg !45
+  %60 = load i64, i64* %59, align 8, !dbg !45
+  %Neg5 = sub i64 0, %60, !dbg !46
+  %61 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %6, i32 0, i32 0, !dbg !47
+  store i64 %56, i64* %61, align 8, !dbg !47
+  %62 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %6, i32 0, i32 1, !dbg !47
+  store i64 %58, i64* %62, align 8, !dbg !47
+  %63 = getelementptr inbounds %"Tuple<Int64,Int64,Int64>", %"Tuple<Int64,Int64,Int64>"* %6, i32 0, i32 2, !dbg !47
+  store i64 %Neg5, i64* %63, align 8, !dbg !47
+  %64 = bitcast %"Tuple<Int64,Int64,Int64>"* %2 to i8*, !dbg !19
+  %65 = bitcast %"Tuple<Int64,Int64,Int64>"* %6 to i8*, !dbg !19
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %64, i8* align 8 %65, i64 24, i1 false), !dbg !19
+  br label %bb7, !dbg !24
+
+bb3:                                              ; preds = %bb0
+  store i1 false, i1* %1, align 1, !dbg !15
+  br label %bb4, !dbg !15
+}
+
+define private i32 @"__cj_personality_v0$"(...) {
+entry:
+  ret i32 0
+}
+
+; Function Attrs: argmemonly nocallback nofree nounwind willreturn
+declare void @llvm.memcpy.p0i8.p0i8.i64(i8* noalias nocapture writeonly, i8* noalias nocapture readonly, i64, i1 immarg) #5
+
+declare i64 @_CNatXl8positionHv(i64, %TypeInfo*) gc "cangjie"
+
+; Function Attrs: noinline
+declare i8 addrspace(1)* @"rt$CreateArithmeticException_msg"(%"record.std.core:String"* nocapture readonly) #6 gc "cangjie"
+
+declare void @llvm.cj.throw.exception(i8 addrspace(1)*)
+
+declare i64 @_CNatXl4nextHl(i64, i64, %TypeInfo*) gc "cangjie"
+
+; Function Attrs: noinline optnone
+define private void @"0_for_keeping_some_types"() #7 {
+entry.unreachable:
+  %0 = alloca %ArrayLayout.UInt8, align 8
+  %1 = alloca %Int64.Type, align 8
+  %2 = alloca %"ObjLayout.Closure<()->ccbase_r0>", align 8
+  %3 = alloca %"ObjLayout.std.core:ArithmeticException", align 8
+  %4 = alloca %"Tuple<Int64,Int64,Int64>", align 8
+  %5 = alloca %enum.OptionLike.Ref, align 8
+  %6 = alloca %"record.std.core:Array<T>", align 8
+  %7 = alloca %"record.std.core:Range<Int64>", align 8
+  %8 = alloca %"record.std.core:String", align 8
+  ret void
+}
+
+attributes #0 = { "CFileKlass" "NotModifiableClass" }
+attributes #1 = { "cjstring_literal" }
+attributes #2 = { "CFileKlass" }
+attributes #3 = { "CJTypeName" }
+attributes #4 = { "cjstring_data" }
+attributes #5 = { argmemonly nocallback nofree nounwind willreturn }
+attributes #6 = { noinline }
+attributes #7 = { noinline optnone }
+
+!llvm.module.flags = !{!3, !4, !5, !6}
+!llvm.dbg.cu = !{!7}
+!pkg_info = !{!9}
+!functions = !{}
+!global_variables = !{}
+
+!0 = !{!"Int64.Type"}
+!1 = !{!"ArrayLayout.UInt8"}
+!2 = !{!"UInt8.Type"}
+!3 = !{i32 2, !"CJBC", i32 1}
+!4 = !{i32 2, !"Cangjie_OPT", i32 0}
+!5 = !{i32 2, !"Debug Info Version", i32 3}
+!6 = !{i32 2, !"Dwarf Version", i32 4}
+!7 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !8, producer: "Cangjie Compiler", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug)
+!8 = !DIFile(filename: "1-example", directory: ".")
+!9 = !{i32 1, !"", !"example", !"example", !"example_example_1", !"example_example_2"}
+!10 = distinct !DISubprogram(scope: !12, file: !11, line: 61, type: !13, scopeLine: 61, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !7, retainedNodes: !14)
+!11 = !DIFile(filename: "range.cj", directory: "std.core")
+!12 = !DINamespace(name: "example", scope: null)
+!13 = !DISubroutineType(types: !14)
+!14 = !{}
+!15 = !DILocation(line: 62, column: 13, scope: !10)
+!16 = !DILocation(line: 62, column: 26, scope: !10)
+!17 = !DILocation(line: 62, column: 9, scope: !10)
+!18 = !DILocation(line: 63, column: 47, scope: !10)
+!19 = !DILocation(line: 63, column: 43, scope: !10)
+!20 = !DILocation(line: 64, column: 18, scope: !10)
+!21 = !DILocation(line: 64, column: 25, scope: !10)
+!22 = !DILocation(line: 64, column: 30, scope: !10)
+!23 = !DILocation(line: 64, column: 17, scope: !10)
+!24 = !DILocation(line: 0, scope: !10, isImplicitCode: true)
+!25 = !DILocation(line: 68, column: 30, scope: !10)
+!26 = !DILocation(line: 68, column: 49, scope: !10)
+!27 = !DILocation(line: 69, column: 29, scope: !10)
+!28 = !DILocation(line: 70, column: 17, scope: !10)
+!29 = !DILocation(line: 70, column: 13, scope: !10)
+!30 = !DILocation(line: 71, column: 21, scope: !10)
+!31 = !DILocation(line: 71, column: 17, scope: !10)
+!32 = !DILocation(line: 72, column: 28, scope: !10)
+!33 = !DILocation(line: 72, column: 37, scope: !10)
+!34 = !DILocation(line: 72, column: 21, scope: !10)
+!35 = !DILocation(line: 74, column: 28, scope: !10)
+!36 = !DILocation(line: 74, column: 21, scope: !10)
+!37 = !DILocation(line: 78, column: 13, scope: !10)
+!38 = !DILocation(line: 78, column: 9, scope: !10)
+!39 = !DILocation(line: 79, column: 13, scope: !10)
+!40 = !DILocation(line: 81, column: 13, scope: !10)
+!41 = !DILocation(line: 81, column: 23, scope: !10)
+!42 = !DILocation(line: 81, column: 22, scope: !10)
+!43 = !DILocation(line: 66, column: 18, scope: !10)
+!44 = !DILocation(line: 66, column: 23, scope: !10)
+!45 = !DILocation(line: 66, column: 31, scope: !10)
+!46 = !DILocation(line: 66, column: 30, scope: !10)
+!47 = !DILocation(line: 66, column: 17, scope: !10)

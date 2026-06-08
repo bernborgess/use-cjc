@@ -1,0 +1,587 @@
+Package: example {
+  noSubPkg: 0
+  File: example.cj {
+    curFile: example.cj
+    position: (1, 1, 1) (1, 20, 2)
+    ptr: 0x74c1500011a0
+    fullPackageName: example
+    attributes: ATTR2STR has invalid mapping(94!=95)
+    // features nullptr
+    // package
+    PackageSpec: example {
+      example
+    }
+    ImportSpec: getStdIn {
+      prefixPaths: std.env
+      isDecl: 1
+    }
+    ImportSpec: * {
+      prefixPaths: std.convert
+      isDecl: 0
+    }
+    ImportSpec: * {
+      prefixPaths: std.core
+      isDecl: 0
+    }
+    FuncDecl: getLine (1, 6, 6) (1, 6, 13) {
+      curFile: example.cj
+      position: (1, 6, 1) (1, 8, 2)
+      ptr: 0x74c150007310
+      fullPackageName: example
+      attributes: ATTR2STR has invalid mapping(94!=95)
+      annotations [
+      ]
+      FuncBody {
+        curFile: example.cj
+        position: (1, 6, 6) (1, 8, 2)
+        ptr: 0x74c150007650
+        fullPackageName: example
+        attributes: ATTR2STR has invalid mapping(94!=95)
+        FuncParamList {
+          // no Params
+        }
+        // return type
+        RefType: String {
+          curFile: example.cj
+          position: (1, 6, 17) (1, 6, 23)
+          ptr: 0x74c150007a10
+          fullPackageName: example
+          attributes: ATTR2STR has invalid mapping(94!=95)
+          // no type arguments
+          targets [
+          ]
+        }
+        // body
+        Block: {
+          curFile: example.cj
+          position: (1, 6, 24) (1, 8, 2)
+          ptr: 0x74c1500070d0
+          fullPackageName: example
+          attributes: ATTR2STR has invalid mapping(94!=95)
+          CallExpr {
+            curFile: example.cj
+            position: (1, 7, 5) (1, 7, 46)
+            ptr: 0x74c150008b90
+            fullPackageName: example
+            attributes: ATTR2STR has invalid mapping(94!=95)
+            BaseFunc {
+              MemberAccess {
+                curFile: example.cj
+                position: (1, 7, 5) (1, 7, 37)
+                ptr: 0x74c150008860
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                // baseExpr
+                CallExpr {
+                  curFile: example.cj
+                  position: (1, 7, 5) (1, 7, 24)
+                  ptr: 0x74c1500085e0
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  BaseFunc {
+                    MemberAccess {
+                      curFile: example.cj
+                      position: (1, 7, 5) (1, 7, 22)
+                      ptr: 0x74c1500082b0
+                      fullPackageName: example
+                      attributes: ATTR2STR has invalid mapping(94!=95)
+                      // baseExpr
+                      CallExpr {
+                        curFile: example.cj
+                        position: (1, 7, 5) (1, 7, 15)
+                        ptr: 0x74c150007fc0
+                        fullPackageName: example
+                        attributes: ATTR2STR has invalid mapping(94!=95)
+                        BaseFunc {
+                          RefExpr: getStdIn {
+                            curFile: example.cj
+                            position: (1, 7, 5) (1, 7, 13)
+                            ptr: 0x74c150007c90
+                            fullPackageName: example
+                            attributes: ATTR2STR has invalid mapping(94!=95)
+                            // no type arguments
+                            targets [
+                            ]
+                          }
+                        }
+                        // no arguments
+                      }
+                      field: readln
+                      // no type arguments
+                      targets [
+                      ]
+                    }
+                  }
+                  // no arguments
+                }
+                field: getOrDefault
+                // no type arguments
+                targets [
+                ]
+              }
+            }
+            arguments [
+              FuncArg {
+                curFile: example.cj
+                position: (1, 7, 38) (1, 7, 45)
+                ptr: 0x74c150008df0
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                LambdaExpr {
+                  curFile: example.cj
+                  position: (1, 7, 38) (1, 7, 45)
+                  ptr: 0x74c150009120
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  mangledName: 
+                  // LambdaExpr-Body
+                  FuncBody {
+                    curFile: example.cj
+                    position: (1, 7, 39) (1, 7, 45)
+                    ptr: 0x74c150009350
+                    fullPackageName: example
+                    attributes: ATTR2STR has invalid mapping(94!=95)
+                    FuncParamList {
+                      // no Params
+                    }
+                    // no return type
+                    // body
+                    Block: {
+                      curFile: example.cj
+                      position: (1, 7, 39) (1, 7, 45)
+                      ptr: 0x74c1500096e0
+                      fullPackageName: example
+                      attributes: ATTR2STR has invalid mapping(94!=95)
+                      LitConstExpr: String "" {
+                        curFile: example.cj
+                        position: (1, 7, 42) (1, 7, 44)
+                        ptr: 0x74c150009bb0
+                        fullPackageName: example
+                        attributes: ATTR2STR has invalid mapping(94!=95)
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+    FuncDecl: getList (1, 10, 6) (1, 10, 13) {
+      curFile: example.cj
+      position: (1, 10, 1) (1, 12, 2)
+      ptr: 0x74c15000a020
+      fullPackageName: example
+      attributes: ATTR2STR has invalid mapping(94!=95)
+      annotations [
+      ]
+      FuncBody {
+        curFile: example.cj
+        position: (1, 10, 6) (1, 12, 2)
+        ptr: 0x74c15000a360
+        fullPackageName: example
+        attributes: ATTR2STR has invalid mapping(94!=95)
+        FuncParamList {
+          // no Params
+        }
+        // return type
+        RefType: Array {
+          curFile: example.cj
+          position: (1, 10, 17) (1, 10, 29)
+          ptr: 0x74c15000a700
+          fullPackageName: example
+          attributes: ATTR2STR has invalid mapping(94!=95)
+          typeArguments [
+            PrimitiveType: Int64 {
+              curFile: example.cj
+              position: (1, 10, 23) (1, 10, 28)
+              ptr: 0x74c15000a960
+              fullPackageName: example
+              attributes: ATTR2STR has invalid mapping(94!=95)
+            }
+          ]
+          targets [
+          ]
+        }
+        // body
+        Block: {
+          curFile: example.cj
+          position: (1, 10, 30) (1, 12, 2)
+          ptr: 0x74c15000ab50
+          fullPackageName: example
+          attributes: ATTR2STR has invalid mapping(94!=95)
+          CallExpr {
+            curFile: example.cj
+            position: (1, 11, 5) (1, 11, 52)
+            ptr: 0x74c15000c0f0
+            fullPackageName: example
+            attributes: ATTR2STR has invalid mapping(94!=95)
+            BaseFunc {
+              MemberAccess {
+                curFile: example.cj
+                position: (1, 11, 5) (1, 11, 29)
+                ptr: 0x74c15000bde0
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                // baseExpr
+                CallExpr {
+                  curFile: example.cj
+                  position: (1, 11, 5) (1, 11, 25)
+                  ptr: 0x74c15000b640
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  BaseFunc {
+                    MemberAccess {
+                      curFile: example.cj
+                      position: (1, 11, 5) (1, 11, 20)
+                      ptr: 0x74c15000b310
+                      fullPackageName: example
+                      attributes: ATTR2STR has invalid mapping(94!=95)
+                      // baseExpr
+                      CallExpr {
+                        curFile: example.cj
+                        position: (1, 11, 5) (1, 11, 14)
+                        ptr: 0x74c15000b090
+                        fullPackageName: example
+                        attributes: ATTR2STR has invalid mapping(94!=95)
+                        BaseFunc {
+                          RefExpr: getLine {
+                            curFile: example.cj
+                            position: (1, 11, 5) (1, 11, 12)
+                            ptr: 0x74c15000ad60
+                            fullPackageName: example
+                            attributes: ATTR2STR has invalid mapping(94!=95)
+                            // no type arguments
+                            targets [
+                            ]
+                          }
+                        }
+                        // no arguments
+                      }
+                      field: split
+                      // no type arguments
+                      targets [
+                      ]
+                    }
+                  }
+                  arguments [
+                    FuncArg {
+                      curFile: example.cj
+                      position: (1, 11, 21) (1, 11, 24)
+                      ptr: 0x74c15000b8a0
+                      fullPackageName: example
+                      attributes: ATTR2STR has invalid mapping(94!=95)
+                      LitConstExpr: String " " {
+                        curFile: example.cj
+                        position: (1, 11, 21) (1, 11, 24)
+                        ptr: 0x74c15000ba70
+                        fullPackageName: example
+                        attributes: ATTR2STR has invalid mapping(94!=95)
+                      }
+                    }
+                  ]
+                }
+                field: map
+                // no type arguments
+                targets [
+                ]
+              }
+            }
+            arguments [
+              FuncArg {
+                curFile: example.cj
+                position: (1, 11, 30) (1, 11, 51)
+                ptr: 0x74c15000c350
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                LambdaExpr {
+                  curFile: example.cj
+                  position: (1, 11, 30) (1, 11, 51)
+                  ptr: 0x74c15000c500
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  mangledName: 
+                  // LambdaExpr-Body
+                  FuncBody {
+                    curFile: example.cj
+                    position: (1, 11, 33) (1, 11, 51)
+                    ptr: 0x74c15000c7c0
+                    fullPackageName: example
+                    attributes: ATTR2STR has invalid mapping(94!=95)
+                    FuncParamList {
+                      FuncParam: s {
+                        curFile: example.cj
+                        position: (1, 11, 31) (1, 11, 32)
+                        ptr: 0x74c15000caf0
+                        fullPackageName: example
+                        attributes: ATTR2STR has invalid mapping(94!=95)
+                        annotations [
+                        ]
+                        // type nullptr
+                        // assignment nullptr
+                        isMemberParam: 0
+                      }
+                    }
+                    // no return type
+                    // body
+                    Block: {
+                      curFile: example.cj
+                      position: (1, 11, 33) (1, 11, 51)
+                      ptr: 0x74c15000ce60
+                      fullPackageName: example
+                      attributes: ATTR2STR has invalid mapping(94!=95)
+                      CallExpr {
+                        curFile: example.cj
+                        position: (1, 11, 36) (1, 11, 50)
+                        ptr: 0x74c15000d700
+                        fullPackageName: example
+                        attributes: ATTR2STR has invalid mapping(94!=95)
+                        BaseFunc {
+                          MemberAccess {
+                            curFile: example.cj
+                            position: (1, 11, 36) (1, 11, 47)
+                            ptr: 0x74c15000d3f0
+                            fullPackageName: example
+                            attributes: ATTR2STR has invalid mapping(94!=95)
+                            // baseExpr
+                            PrimitiveTypeExpr: UnknownType
+                            field: parse
+                            // no type arguments
+                            targets [
+                            ]
+                          }
+                        }
+                        arguments [
+                          FuncArg {
+                            curFile: example.cj
+                            position: (1, 11, 48) (1, 11, 49)
+                            ptr: 0x74c15000d960
+                            fullPackageName: example
+                            attributes: ATTR2STR has invalid mapping(94!=95)
+                            RefExpr: s {
+                              curFile: example.cj
+                              position: (1, 11, 48) (1, 11, 49)
+                              ptr: 0x74c15000db10
+                              fullPackageName: example
+                              attributes: ATTR2STR has invalid mapping(94!=95)
+                              // no type arguments
+                              targets [
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+    MainDecl: main {
+      curFile: example.cj
+      position: (1, 15, 1) (1, 20, 2)
+      ptr: 0x74c15000ddf0
+      fullPackageName: example
+      attributes: ATTR2STR has invalid mapping(94!=95)
+      // funcBody
+      FuncBody {
+        curFile: example.cj
+        position: (1, 15, 1) (1, 20, 2)
+        ptr: 0x74c15000e0f0
+        fullPackageName: example
+        attributes: ATTR2STR has invalid mapping(94!=95)
+        FuncParamList {
+          // no Params
+        }
+        // return type
+        PrimitiveType: Int64 {
+          curFile: example.cj
+          position: (1, 15, 9) (1, 15, 14)
+          ptr: 0x74c15000e440
+          fullPackageName: example
+          attributes: ATTR2STR has invalid mapping(94!=95)
+        }
+        // body
+        Block: {
+          curFile: example.cj
+          position: (1, 15, 15) (1, 20, 2)
+          ptr: 0x74c15000e610
+          fullPackageName: example
+          attributes: ATTR2STR has invalid mapping(94!=95)
+          VarDecl: let list {
+            curFile: example.cj
+            position: (1, 16, 5) (1, 16, 25)
+            ptr: 0x74c15000e840
+            fullPackageName: example
+            attributes: ATTR2STR has invalid mapping(94!=95)
+            annotations [
+            ]
+            // type nullptr
+            // initializer
+            CallExpr {
+              curFile: example.cj
+              position: (1, 16, 16) (1, 16, 25)
+              ptr: 0x74c15000efb0
+              fullPackageName: example
+              attributes: ATTR2STR has invalid mapping(94!=95)
+              BaseFunc {
+                RefExpr: getList {
+                  curFile: example.cj
+                  position: (1, 16, 16) (1, 16, 23)
+                  ptr: 0x74c15000eb90
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  // no type arguments
+                  targets [
+                  ]
+                }
+              }
+              // no arguments
+            }
+            parentPattern: 0
+          }
+          VarDecl: let c {
+            curFile: example.cj
+            position: (1, 17, 5) (1, 17, 30)
+            ptr: 0x74c15000f210
+            fullPackageName: example
+            attributes: ATTR2STR has invalid mapping(94!=95)
+            annotations [
+            ]
+            // type nullptr
+            // initializer
+            BinaryExpr  + {
+              curFile: example.cj
+              position: (1, 17, 13) (1, 17, 30)
+              ptr: 0x74c15000fd00
+              fullPackageName: example
+              attributes: ATTR2STR has invalid mapping(94!=95)
+              // leftExpr:
+              SubscriptExpr {
+                curFile: example.cj
+                position: (1, 17, 13) (1, 17, 20)
+                ptr: 0x74c15000f870
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                // baseExpr
+                RefExpr: list {
+                  curFile: example.cj
+                  position: (1, 17, 13) (1, 17, 17)
+                  ptr: 0x74c15000f560
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  // no type arguments
+                  targets [
+                  ]
+                }
+                indexExprs [
+                  LitConstExpr: Integer "0" {
+                    curFile: example.cj
+                    position: (1, 17, 18) (1, 17, 19)
+                    ptr: 0x74c150009910
+                    fullPackageName: example
+                    attributes: ATTR2STR has invalid mapping(94!=95)
+                  }
+                ]
+              }
+              // rightExpr:
+              SubscriptExpr {
+                curFile: example.cj
+                position: (1, 17, 23) (1, 17, 30)
+                ptr: 0x74c1500101d0
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                // baseExpr
+                RefExpr: list {
+                  curFile: example.cj
+                  position: (1, 17, 23) (1, 17, 27)
+                  ptr: 0x74c15000fee0
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  // no type arguments
+                  targets [
+                  ]
+                }
+                indexExprs [
+                  LitConstExpr: Integer "1" {
+                    curFile: example.cj
+                    position: (1, 17, 28) (1, 17, 29)
+                    ptr: 0x74c1500103f0
+                    fullPackageName: example
+                    attributes: ATTR2STR has invalid mapping(94!=95)
+                  }
+                ]
+              }
+            }
+            parentPattern: 0
+          }
+          CallExpr {
+            curFile: example.cj
+            position: (1, 18, 5) (1, 18, 15)
+            ptr: 0x74c150010950
+            fullPackageName: example
+            attributes: ATTR2STR has invalid mapping(94!=95)
+            BaseFunc {
+              RefExpr: println {
+                curFile: example.cj
+                position: (1, 18, 5) (1, 18, 12)
+                ptr: 0x74c150010680
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                // no type arguments
+                targets [
+                ]
+              }
+            }
+            arguments [
+              FuncArg {
+                curFile: example.cj
+                position: (1, 18, 13) (1, 18, 14)
+                ptr: 0x74c150010bb0
+                fullPackageName: example
+                attributes: ATTR2STR has invalid mapping(94!=95)
+                RefExpr: c {
+                  curFile: example.cj
+                  position: (1, 18, 13) (1, 18, 14)
+                  ptr: 0x74c150010d60
+                  fullPackageName: example
+                  attributes: ATTR2STR has invalid mapping(94!=95)
+                  // no type arguments
+                  targets [
+                  ]
+                }
+              }
+            ]
+          }
+          ReturnExpr {
+            curFile: example.cj
+            position: (1, 19, 5) (1, 19, 13)
+            ptr: 0x74c150011070
+            fullPackageName: example
+            attributes: ATTR2STR has invalid mapping(94!=95)
+            // expr
+            LitConstExpr: Integer "0" {
+              curFile: example.cj
+              position: (1, 19, 12) (1, 19, 13)
+              ptr: 0x74c150011250
+              fullPackageName: example
+              attributes: ATTR2STR has invalid mapping(94!=95)
+            }
+          }
+        }
+      }
+    }
+    originalMacroCallNodes [
+    ]
+  }
+  genericInstantiatedDecls {
+  }
+  srcImportedNonGenericDecls {
+  }
+  inlineFuncDecls {
+  }
+}
